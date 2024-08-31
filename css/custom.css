@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #14b8a6;
+    --text-color: #94a3b8
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.container-fluid {
+    justify-content: space-between;
+}
+
+.nav_part {
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    padding: 10px 0px;
+    background-color: #161c2db3;
+
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+nav ul li a {
+    color: #fffafa !important;
+    text-transform: uppercase;
+    font-size: 14px !important;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand img {
+    width: 130px;
+}
+
+.navbar-toggler-icon {
+    fill: white !important;
+}
+
+.login {
+    text-decoration: none;
+    background-color: var(--primary-color) !important;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.custom_btn {
+    border: none;
+    background-color: var(--primary-color) !important;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+header {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: #161c2db3;
+    background-blend-mode: multiply;
+    animation: zoomInOut 15s infinite alternate;
+    height: 100vh;
+}
+
+.contant {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+
+.contant h1 {
+    font-size: 48px;
+    line-height: 75px;
+    font-weight: 600;
+}
+
+.contant p {
+    font-size: 17px;
+    width: 60%;
+    margin: auto;
+    line-height: 28px;
+    color: var(--text-color);
+}
+
+@keyframes zoomInOut {
+    0% {
+        background-size: 150%;
+        /* Zoomed in */
+    }
+
+    100% {
+        background-size: 100%;
+        /* Zoomed out */
+    }
+}
+
+/* partnership_img */
+.partnership_img img {
+    border-radius: 50%;
+
+}
+
+.partnership_content {}
+
+.partnership_content h3 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.partnership_content h5 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 24px;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.services_section {
+    background-color: rgb(248, 250, 252);
+    padding: 60px 0;
+}
+
+.services_content img {
+    width: 50PX;
+    filter: var(--primary-color);
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.card-title {
+    font-size: 17px;
+}
+
+.card-text {
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.card-link, .read_more {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* marketing section */
+.marketing_container, .marketing_container_2{
+    border: 2px solid var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+.marketing_content {
+    padding: 5px;
+    border-radius: 5px;
+}
+.marketing_content:hover{
+    background-color: #14b8a6;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.marketing_content p{
+    color:black !important;
+}
+.marketing_container_2 img{
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.marketing_container_2 a{
+    color: #14b8a6;
+    text-decoration: none;
+}
+/* blog section */
+.card-body{
+    padding: 0;
+    border: none !important;
+    margin-top: 10px;
+}
+.card{
+    border: none !important;
+}
+.card-text{
+    padding: 0;
+}
+.blog_contant img{
+    width: 100%;
+    border-radius: 5px;
+}
+.question{
+    aspect-ratio: 1/1;
+}
+/* form */
+.contact{
+    background-color: rgb(248, 250, 252);
+}
+
+form{
+    background-color: white;
+}
+input, textarea{
+    width: 100%;
+}
+.name, .email{
+    width: 100%;
+}
+label{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+    color: #4a4848;
+}
+
+footer{
+    background-color: rgb(25, 33, 50);
+    padding: 10px;
+}
+
+
+
+
+@media (max-width:992px) {
+    header {
+        background-image: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        background-color: #161c2db3;
+        background-blend-mode: multiply;
+        animation: zoomInOut 0s infinite alternate;
+        padding: 10px;
+        height: 500px;
+
+    }
+
+
+    .nav_part {
+        background-color: transparent;
+        position: static;
+    }
+
+
+
+    .contant p {
+        font-size: 13px;
+        width: 100%;
+
+    }
+
+    .contant h1 {
+        font-size: 27px;
+        line-height: 38px;
+        font-weight: 600;
+    }
+}
